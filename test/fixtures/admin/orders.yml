@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customre_email: MyString
+  fulfilled: false
+  total: 1
+  address: MyString
+
+two:
+  customre_email: MyString
+  fulfilled: false
+  total: 1
+  address: MyString
