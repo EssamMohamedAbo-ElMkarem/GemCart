@@ -2,6 +2,31 @@
 
 GemCart is an e-commerce application built on Ruby on Rails.
 
+## Integration Details
+
+* CSS Framework: Tailwind CSS is used for styling the application UI.
+* Payment Gateway: Stripe is integrated for handling payments securely.
+* Pagination: Pagy gem is planned to be used for pagination throughout the application.
+
+## User Views
+
+![Screenshot 2024-07-13 at 02-33-33 GemCart](https://github.com/user-attachments/assets/dbeec07c-db1c-48a5-bd00-fa6e3f061587)
+
+![Screenshot 2024-07-13 at 02-34-22 GemCart](https://github.com/user-attachments/assets/e82b4094-e2fa-4f9c-be91-176b5df7ddc0)
+
+![Screenshot 2024-07-13 at 02-34-09 GemCart](https://github.com/user-attachments/assets/5c3f1d09-e058-4dee-aaaa-45bd9046119e)
+
+## Admin Views
+
+![Screenshot 2024-07-13 at 02-35-05 GemCart](https://github.com/user-attachments/assets/c1daba02-9e42-4e8f-ba4a-de2bdddba446)
+
+![Screenshot 2024-07-13 at 02-35-16 GemCart](https://github.com/user-attachments/assets/0e847bfe-0493-404d-a12f-5e8082ff13f7)
+
+![Screenshot 2024-07-13 at 02-35-29 GemCart](https://github.com/user-attachments/assets/c2259266-7bc2-4229-a906-8da80b1599e5)
+
+![Screenshot 2024-07-13 at 02-35-52 GemCart](https://github.com/user-attachments/assets/28a9fd6a-1490-4731-b2e8-63301dddd7a7)
+
+
 ## Installation
 
 To run GemCart on your local machine, follow these steps:
@@ -83,7 +108,5 @@ To run GemCart on your local machine, follow these steps:
 - **POST /webhooks**: Handles Stripe webhook events.
 
 ### System Health Check
-
 - **GET /up**: Returns 200 if the app boots with no exceptions, otherwise 500.
 
----
