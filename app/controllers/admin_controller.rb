@@ -15,13 +15,13 @@ class AdminController < ApplicationController
     @revenue_by_day = @orders_by_day.map {|day, order| [day.strftime("%A"), order.sum(&:total)]}
 
     if @revenue_by_day.count < 7
-      days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      days_of_week = %w[Monday Tuesday Wednesday Thursday Friday Saturday]
       data_hash = @revenue_by_day.to_h
       current_day = Date.today.strftime("%A")
       current_day_index = days_of_week.index(current_day)
       next_day_index = (current_day_index + 1) % days_of_week.length
-      ordered_days_With_current_past = days_of_week[next_day_index..-1] + days_of_week[0..next_day_index]
-      complete_ordered_array_with_current_last = ordered_days_With_current_past.map{ |day| [day, data_hash.fetch(day, 0)] }
+      ordered_days_with_current_past = days_of_week[next_day_index..-1] + days_of_week[0..next_day_index]
+      complete_ordered_array_with_current_last = ordered_days_with_current_past.map{ |day| [day, data_hash.fetch(day, 0)] }
       @revenue_by_day = complete_ordered_array_with_current_last
     end
   end
